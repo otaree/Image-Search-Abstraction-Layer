@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Backend Challenges | Free Code Camp</title>
+    <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico"
+        type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="/public/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>API Basejump: Image Search Abstraction Layer</h1>
+        <div class="user-stories">
+            <h3>User stories:</h3>
+            <ul>
+                <li>
+                    <p>
+                        I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        I can get a list of the most recently submitted search strings.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <h2>
+            Example creation usage:
+        </h2>
+        <p>To get the image URLs, alt text and page urls for a set of images relating to a given search string</p>
+        <code>
+            https://cryptic-ridge-9197.herokuapp.com/api/imagesearch/lolcats%20funny?offset=10 
+        </code>
+        <br>
+       <p>Recently submitted search strings</p>
+       <code>
+        https://cryptic-ridge-9197.herokuapp.com/api/latest/imagesearch/
+       </code>
+    </div>
+</body>
+
+</html>
