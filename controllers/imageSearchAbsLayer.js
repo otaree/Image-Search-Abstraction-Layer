@@ -10,7 +10,7 @@ function checkNumber(num) {
   var length = num.length;
   length -= 1;
   var firtDig = num[0];
-  return (parseInt(firtDig) + 1) * 10**(length);
+  return (parseInt(firtDig) + 1) * (Math.pow(10,length));
 }
 
 function parseImages(images) {
@@ -47,7 +47,7 @@ function searchImages(term, offset, response) {
   var counter = 0;
 
   for (var i = 1; i <= pages; i++) {
-      client.search('manga', {
+      client.search(term, {
               page: i
           })
           .then(images => {
